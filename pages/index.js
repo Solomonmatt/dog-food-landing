@@ -137,22 +137,22 @@ export default function Home() {
         of a longer, healthier life.
       </p>
 
-      {/* Key Stats */}
+      {/* Key Stats - Side-by-Side Layout */}
       <div className="space-y-4 mb-6">
-        <div>
-          <p className="text-orange-600 font-bold text-xl">97%</p>
+        <div className="flex items-start gap-4">
+          <p className="text-orange-600 font-extrabold text-4xl leading-none">97%</p>
           <p className="text-sm text-gray-700">
             Dogs choose our dog food over leading brands because of its real functional ingredients and delicious flavor.
           </p>
         </div>
-        <div>
-          <p className="text-orange-600 font-bold text-xl">84%</p>
+        <div className="flex items-start gap-4">
+          <p className="text-orange-600 font-extrabold text-4xl leading-none">84%</p>
           <p className="text-sm text-gray-700">
             Provides superior nutrition and a patented superfood blend for nutrient absorption.
           </p>
         </div>
-        <div>
-          <p className="text-orange-600 font-bold text-xl">92%</p>
+        <div className="flex items-start gap-4">
+          <p className="text-orange-600 font-extrabold text-4xl leading-none">92%</p>
           <p className="text-sm text-gray-700">
             High protein content and 1st digestibility contribute to ideal stool quality.
           </p>
@@ -168,7 +168,7 @@ export default function Home() {
     {/* Right Column: Dog Image */}
     <div className="md:w-1/2 flex justify-center">
       <Image
-        src="dog.png" // Replace with your actual image filename
+        src="/dog.png" // Replace with your actual image filename
         alt="Happy Dog Bites"
         width={350}
         height={350}
@@ -177,7 +177,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-
       {/* Section 3: Improve Gut Health */}
       <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="flex justify-center">
