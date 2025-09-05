@@ -74,7 +74,14 @@ export default function Home() {
             <p className="text-gray-600 text-sm">We priotize maintaining the intergrity of whole foods and nutrition. </p>
           </div>
 
-
+          </div>
+          <Image
+            src=""
+            alt=""
+            width={200}
+            height={200}
+            className="rounded-full shadow-lg"
+          />
 
 
          
