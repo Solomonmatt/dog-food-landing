@@ -12,10 +12,10 @@ export default function Home() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <li><a href="#about" className="hover:text-orange-600">About</a></li>
-          <li><a href="#nutrition" className="hover:text-orange-600">Nutrition</a></li>
-          <li><a href="#probiotics" className="hover:text-orange-600">Probiotics</a></li>
-          <li><a href="#contact" className="hover:text-orange-600">Contact</a></li>
+          <li><a href="#about" className="hover:text-orange-600"></a></li>
+          <li><a href="#nutrition" className="hover:text-orange-600"></a></li>
+          <li><a href="#probiotics" className="hover:text-orange-600"></a></li>
+          <li><a href="#contact" className="hover:text-orange-600"></a></li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -38,10 +38,10 @@ export default function Home() {
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md px-6 py-4 space-y-3 text-gray-700 font-medium">
-          <a href="#about" className="block hover:text-orange-600">About</a>
-          <a href="#nutrition" className="block hover:text-orange-600">Nutrition</a>
-          <a href="#probiotics" className="block hover:text-orange-600">Probiotics</a>
-          <a href="#contact" className="block hover:text-orange-600">Contact</a>
+          <a href="#about" className="block hover:text-orange-600"></a>
+          <a href="#nutrition" className="block hover:text-orange-600"></a>
+          <a href="#probiotics" className="block hover:text-orange-600"></a>
+          <a href="#contact" className="block hover:text-orange-600"></a>
           <button className="w-full bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700">
             Get Started
           </button>
@@ -49,7 +49,7 @@ export default function Home() {
       )}
 
 
-      {/* Section 1: What makes us different */}
+          {/* Section 1: What makes us different */}
 <section id="about" className="text-center py-12 px-6">
   <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
     What makes us different
@@ -119,16 +119,13 @@ export default function Home() {
   </div>
 </section>
 
-
-
-
 {/* Section: Happy Dog Bites Promo */}
 <section className="bg-white py-16 px-6">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
     
     {/* Left Column: Text Content */}
     <div className="md:w-1/2">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-1200 mb-4">
         Nutrition is the foundation for longer, healthier lives in dogs.
       </h2>
       <p className="text-gray-600 mb-6">
@@ -177,13 +174,19 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+
+
+
+
+
       {/* Section 3: Improve Gut Health */}
       <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="flex justify-center">
           <Image src="/dogs-eating.png" alt="Dogs Eating" width={400} height={300} className="rounded-lg" />
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-gray-800">
+          <h2 className="text-2xl font-bold text-gray-1200">
             Improve overall gastrointestinal health for better nutrient absorption
           </h2>
           <p className="text-gray-600 mt-4">
@@ -201,7 +204,7 @@ export default function Home() {
       {/* Section 4: Probiotics */}
       <section id="probiotics" className="bg-gray-50 py-16 px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h2 className="text-2xl font-bold text-gray-800">
+          <h2 className="text-2xl font-bold text-gray-1200">
             Probiotics nourish the beneficial gut bacteria, supporting digestive health
           </h2>
           <p className="text-gray-600 mt-4">
@@ -217,28 +220,28 @@ export default function Home() {
       <footer id="contact" className="bg-gray-900 text-gray-300 py-10 px-6 md:px-20 mt-16">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-bold text-white">DogFood</h3>
+            <h3 className="text-lg font-bold text-white"></h3>
             <p className="mt-2 text-sm">
-              Premium nutrition for your furry friends. Backed by science, loved by dogs.
+              
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-bold text-white">Quick Links</h3>
+            <h3 className="text-lg font-bold text-white"></h3>
             <ul className="mt-2 space-y-2 text-sm">
-              <li><a href="#about" className="hover:text-white">About</a></li>
-              <li><a href="#nutrition" className="hover:text-white">Nutrition</a></li>
-              <li><a href="#probiotics" className="hover:text-white">Probiotics</a></li>
-              <li><a href="#contact" className="hover:text-white">Contact</a></li>
+              <li><a href="#about" className="hover:text-white"></a></li>
+              <li><a href="#nutrition" className="hover:text-white"></a></li>
+              <li><a href="#probiotics" className="hover:text-white"></a></li>
+              <li><a href="#contact" className="hover:text-white"></a></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-bold text-white">Contact Us</h3>
-            <p className="mt-2 text-sm">Email: support@dogfood.com</p>
-            <p className="text-sm">Phone: +234 800 123 4567</p>
+            <h3 className="text-lg font-bold text-white"></h3>
+            <p className="mt-2 text-sm"></p>
+            <p className="text-sm"></p>
           </div>
         </div>
         <div className="text-center mt-8 text-sm text-gray-500">
-          © {new Date().getFullYear()} DogFood. All rights reserved.
+          © {new Date().getFullYear()} Solomon Mathew. Interview.
         </div>
       </footer>
     </main>
