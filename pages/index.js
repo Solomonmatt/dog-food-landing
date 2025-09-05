@@ -83,8 +83,8 @@ export default function Home() {
             className="rounded-full shadow-lg"
           />
 
-
-         
+<div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10"> </div>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
           <div className="text-center">
             <p className="font-semibold">Premium Ingredient</p>
             <p className="text-gray-600 text-sm">Elevating pet care with unmatched safety and quality.</p>
