@@ -50,49 +50,74 @@ export default function Home() {
 
 
       {/* Section 1: What makes us different */}
-      <section id="about" className="text-center py-12 px-6">
-        <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
-          What makes us different
-        </h1>
-        <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
-          makes them stronger
-        </h1>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
-          <div className="text-center">
-            <p className="font-semibold">Real Food</p>
-            <p className="text-gray-600 text-sm">Wholesome recipes for dogs with real meat and vegges</p>
-          </div>
-          <Image
-            src="/dog-food.png"
-            alt="Dog Food"
-            width={200}
-            height={200}
-            className="rounded-full shadow-lg"
-          />
-          <div className="text-center">
-            <p className="font-semibold">Made Fresh</p>
-            <p className="text-gray-600 text-sm">We priotize maintaining the intergrity of whole foods and nutrition. </p>
-          </div>
+<section id="about" className="text-center py-12 px-6">
+  <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
+    What makes us different
+  </h1>
+  <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
+    makes them stronger
+  </h1>
 
-          </div>
-          <Image
-           
-          />
+  <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
+    <div className="text-center">
+      <p className="font-semibold">Real Food</p>
+      <p className="text-gray-600 text-sm">
+        Wholesome recipes for dogs with real meat and vegges
+      </p>
+    </div>
+    <Image
+      src="/dog-food.png"
+      alt="Dog Food"
+      width={200}
+      height={200}
+      className="rounded-full shadow-lg"
+    />
+    <div className="text-center">
+      <p className="font-semibold">Made Fresh</p>
+      <p className="text-gray-600 text-sm">
+        We priotize maintaining the intergrity of whole foods and nutrition.
+      </p>
+    </div>
+  </div>
 
-<div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">  </div>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
-          <div className="text-center">
-            <p className="font-semibold">Premium Ingredient</p>
-            <p className="text-gray-600 text-sm">Elevating pet care with unmatched safety and quality.</p>
-          </div>
-          
-          <div className="text-center">
-            <p className="font-semibold">Vet Developed</p>
-            <p className="text-gray-600 text-sm">We raised the barfor dog nutrition, surpassing industry expectations. </p>
-          </div>
-        </div>
-      </section>
+  <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
+    <div className="text-center">
+      <p className="font-semibold">Premium Ingredient</p>
+      <p className="text-gray-600 text-sm">
+        Elevating pet care with unmatched safety and quality.
+      </p>
+    </div>
 
+    <div className="text-center">
+      <p className="font-semibold">Vet Developed</p>
+      <p className="text-gray-600 text-sm">
+        We raised the bar for dog nutrition, surpassing industry expectations.
+      </p>
+    </div>
+  </div>
+
+  {/* Section 2: CTA and Payment Methods */}
+  <div className="mt-16 text-center">
+    {/* Orange CTA Button */}
+    <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300">
+      Get your dog's healthy meal today!
+    </button>
+
+    {/* Guarantee Text */}
+    <p className="mt-4 text-sm text-gray-700 font-medium">
+      30-day money back guarantee
+    </p>
+
+    {/* Payment Icons */}
+    <div className="flex justify-center items-center gap-6 mt-6">
+      <Image src="/paypal.png" alt="PayPal" width={50} height={30} />
+      <Image src="/visa.png" alt="Visa" width={50} height={30} />
+      <Image src="/mastercard.png" alt="MasterCard" width={50} height={30} />
+      <Image src="/applepay.png" alt="Apple Pay" width={50} height={30} />
+      <Image src="/googlepay.png" alt="Google Pay" width={50} height={30} />
+    </div>
+  </div>
+</section>
 
 
 
