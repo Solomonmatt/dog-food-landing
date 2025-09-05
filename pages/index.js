@@ -9,27 +9,18 @@ export default function Home() {
       {/* Navbar */}
       <nav className="flex items-center justify-between px-6 md:px-20 py-4 shadow-sm bg-white sticky top-0 z-50">
         <div className="text-2xl font-bold text-orange-600">DogFood</div>
-
-        {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
           <li><a href="#about" className="hover:text-orange-600">About</a></li>
           <li><a href="#nutrition" className="hover:text-orange-600">Nutrition</a></li>
           <li><a href="#probiotics" className="hover:text-orange-600">Probiotics</a></li>
           <li><a href="#contact" className="hover:text-orange-600">Contact</a></li>
         </ul>
-
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-700 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? (
-            <span className="text-2xl">✖</span>
-          ) : (
-            <span className="text-2xl">☰</span>
-          )}
+          <span className="text-2xl">{menuOpen ? "✖" : "☰"}</span>
         </button>
-
         <button className="hidden md:block bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700">
           Get Started
         </button>
@@ -50,8 +41,8 @@ export default function Home() {
 
       {/* Section 1: What makes us different */}
       <section id="about" className="text-center py-12 px-6">
-      <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
-      What makes us different
+        <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
+          What makes us different
         </h1>
         <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
           makes them stronger
@@ -59,33 +50,39 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
           <div className="text-center">
             <p className="font-semibold">Real Food</p>
-            <p className="text-gray-600 text-sm">Wholesome recipes for dogs with real meat and veggies.</p>
+            <p className="text-gray-600 text-sm">
+              Wholesome recipes for dogs with real meat and veggies.
+            </p>
           </div>
           <Image
             src="/dog-food.png"
-            alt="Dog Food"
+            alt="Bowl of fresh dog food"
             width={200}
             height={200}
             className="rounded-full shadow-lg"
           />
           <div className="text-center">
             <p className="font-semibold">Made Fresh</p>
-            <p className="text-gray-600 text-sm">We priotize maintaining the integrity of whole foods and nutrition.</p>
+            <p className="text-gray-600 text-sm">
+              We prioritize maintaining the integrity of whole foods and nutrition.
+            </p>
           </div>
-     
+        </div>
 
-       
         <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
           <div className="text-center">
             <p className="font-semibold">Premium Ingredients</p>
-            <p className="text-gray-600 text-sm">Elevating pet care with unmatched safety and quality.</p>
+            <p className="text-gray-600 text-sm">
+              Elevating pet care with unmatched safety and quality.
+            </p>
           </div>
-         
           <div className="text-center">
             <p className="font-semibold">Vet Developed</p>
-            <p className="text-gray-600 text-sm">We raise the bar for dog nutrition, suprpasing industry expectations.</p>
+            <p className="text-gray-600 text-sm">
+              We raise the bar for dog nutrition, surpassing industry expectations.
+            </p>
           </div>
-       
+        </div>
       </section>
 
       {/* Section 2: Nutrition Foundation */}
@@ -102,14 +99,14 @@ export default function Home() {
           </ul>
         </div>
         <div className="flex justify-center">
-          <Image src="/dog.png" alt="Dog" width={350} height={350} className="rounded-lg" />
+          <Image src="/dog.png" alt="Healthy dog sitting" width={350} height={350} className="rounded-lg" />
         </div>
       </section>
 
       {/* Section 3: Improve Gut Health */}
       <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="flex justify-center">
-          <Image src="/dogs-eating.png" alt="Dogs Eating" width={400} height={300} className="rounded-lg" />
+          <Image src="/dogs-eating.png" alt="Dogs eating together" width={400} height={300} className="rounded-lg" />
         </div>
         <div>
           <h2 className="text-2xl font-bold text-gray-800">
@@ -134,7 +131,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-center">
-          <Image src="/dog-food-closeup.png" alt="Dog Food Closeup" width={350} height={350} className="rounded-lg" />
+          <Image src="/dog-food-closeup.png" alt="Close-up of dog food kibble" width={350} height={350} className="rounded-lg" />
         </div>
       </section>
 
