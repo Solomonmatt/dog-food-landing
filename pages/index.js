@@ -57,7 +57,7 @@ export default function Home() {
         <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
           makes them stronger
         </h1>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10"></div>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
           <div className="text-center">
             <p className="font-semibold">Real Food</p>
             <p className="text-gray-600 text-sm">Wholesome recipes for dogs with real meat and vegges</p>
@@ -74,8 +74,15 @@ export default function Home() {
             <p className="text-gray-600 text-sm">We priotize maintaining the intergrity of whole foods and nutrition. </p>
           </div>
 
-          
-<div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10"> </div>
+          </div>
+          <Image
+            
+            width={200}
+            height={200}
+            className="rounded-full shadow-lg"
+          />
+
+<div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">  </div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
           <div className="text-center">
             <p className="font-semibold">Premium Ingredient</p>
