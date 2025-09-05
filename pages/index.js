@@ -76,10 +76,7 @@ export default function Home() {
 
           </div>
           <Image
-            
-            width={200}
-            height={200}
-            className="rounded-full shadow-lg"
+           
           />
 
 <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">  </div>
