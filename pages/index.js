@@ -121,56 +121,61 @@ export default function Home() {
 
 
 
-    
+
 {/* Section: Happy Dog Bites Promo */}
-<section className="bg-white py-16 px-6 text-center">
-  {/* Hero Image */}
-  <div className="flex justify-center mb-8">
-    <Image
-      src="/dog.png" // Replace with your actual image filename
-      alt="Happy Dog Bites"
-      width={300}
-      height={300}
-      className="rounded-lg shadow-md"
-    />
+<section className="bg-white py-16 px-6">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    
+    {/* Left Column: Text Content */}
+    <div className="md:w-1/2">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+        Nutrition is the foundation for longer, healthier lives in dogs.
+      </h2>
+      <p className="text-gray-600 mb-6">
+        Invest in your dog’s future with our scientifically formulated superfood-powered supplements. 
+        Give them the nutrition they deserve and watch them thrive with vitality, energy, and the joy 
+        of a longer, healthier life.
+      </p>
+
+      {/* Key Stats */}
+      <div className="space-y-4 mb-6">
+        <div>
+          <p className="text-orange-600 font-bold text-xl">97%</p>
+          <p className="text-sm text-gray-700">
+            Dogs choose our dog food over leading brands because of its real functional ingredients and delicious flavor.
+          </p>
+        </div>
+        <div>
+          <p className="text-orange-600 font-bold text-xl">84%</p>
+          <p className="text-sm text-gray-700">
+            Provides superior nutrition and a patented superfood blend for nutrient absorption.
+          </p>
+        </div>
+        <div>
+          <p className="text-orange-600 font-bold text-xl">92%</p>
+          <p className="text-sm text-gray-700">
+            High protein content and 1st digestibility contribute to ideal stool quality.
+          </p>
+        </div>
+      </div>
+
+      {/* CTA Button */}
+      <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300">
+        Give your furry friend the gift of wholesome nutrition
+      </button>
+    </div>
+
+    {/* Right Column: Dog Image */}
+    <div className="md:w-1/2 flex justify-center">
+      <Image
+        src="dog.png" // Replace with your actual image filename
+        alt="Happy Dog Bites"
+        width={350}
+        height={350}
+        className="rounded-lg shadow-lg"
+      />
+    </div>
   </div>
-
-  {/* Headline & Description */}
-  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-    Nutrition is the foundation for longer, healthier lives in dogs.
-  </h2>
-  <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-    Invest in your dog’s future with our scientifically formulated superfood-powered supplements. 
-    Give them the nutrition they deserve and watch them thrive with vitality, energy, and the joy 
-    of a longer, healthier life.
-  </p>
-
-  {/* Key Stats */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
-    <div className="bg-orange-100 p-6 rounded-lg shadow-sm">
-      <p className="text-4xl font-bold text-orange-600">97%</p>
-      <p className="text-sm text-gray-700 mt-2">
-        Dogs choose our dog food over leading brands because of its real functional ingredients and delicious flavor.
-      </p>
-    </div>
-    <div className="bg-orange-100 p-6 rounded-lg shadow-sm">
-      <p className="text-4xl font-bold text-orange-600">84%</p>
-      <p className="text-sm text-gray-700 mt-2">
-        Provides superior nutrition and a patented supplement for nutrient absorption.
-      </p>
-    </div>
-    <div className="bg-orange-100 p-6 rounded-lg shadow-sm">
-      <p className="text-4xl font-bold text-orange-600">92%</p>
-      <p className="text-sm text-gray-700 mt-2">
-        High protein content and 1st digestibility contribute to ideal stool quality.
-      </p>
-    </div>
-  </div>
-
-  {/* Closing Line */}
-  <p className="text-lg font-semibold text-gray-800">
-    Give your furry friend the gift of wholesome nutrition
-  </p>
 </section>
 
       {/* Section 3: Improve Gut Health */}
